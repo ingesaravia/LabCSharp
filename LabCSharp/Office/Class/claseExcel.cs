@@ -21,6 +21,11 @@ namespace LabCSharp.Office
 
         public string dirArchivo;
 
+        public void combinarArchivos()
+        {
+            
+        }
+
         public void generarListado(string dirArchivo)
         {
             //declaracion de arreglos
