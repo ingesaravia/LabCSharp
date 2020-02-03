@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,20 +44,156 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Office\Class\claseExcel.cs" />
+    <Compile Include="Multimedia\View\gesImagenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Multimedia\View\gesImagenes.designer.cs">
+      <DependentUpon>gesImagenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multimedia\View\gesPixeles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Multimedia\View\gesPixeles.designer.cs">
+      <DependentUpon>gesPixeles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Networking\View\gesConectividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Networking\View\gesConectividad.Designer.cs">
+      <DependentUpon>gesConectividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Networking\View\gesFirewall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Networking\View\gesFirewall.Designer.cs">
+      <DependentUpon>gesFirewall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Networking\View\gesNavegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Networking\View\gesNavegador.Designer.cs">
+      <DependentUpon>gesNavegador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Office\View\gesOfficeExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Office\View\gesOfficeExcel.designer.cs">
+      <DependentUpon>gesOfficeExcel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProgPOO\Class\claseEmpleado.cs" />
+    <Compile Include="ProgPOO\Class\claseJefe.cs" />
+    <Compile Include="ProgPOO\Class\clasePersona.cs" />
+    <Compile Include="ProgPOO\View\gesProgClase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgPOO\View\gesProgClase.designer.cs">
+      <DependentUpon>gesProgClase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Programacion\Class\claseArreglos.cs" />
+    <Compile Include="Programacion\Class\claseListas.cs" />
+    <Compile Include="Programacion\Class\claseRegistro.cs" />
+    <Compile Include="Programacion\Class\GenAleatorio.cs" />
+    <Compile Include="Programacion\View\gesEstructuraDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programacion\View\gesEstructuraDatos.Designer.cs">
+      <DependentUpon>gesEstructuraDatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Windows\View\gesArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\View\gesArchivo.designer.cs">
+      <DependentUpon>gesArchivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\View\gesBDArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\View\gesBDArchivo.Designer.cs">
+      <DependentUpon>gesBDArchivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\View\gesClipboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\View\gesClipboard.designer.cs">
+      <DependentUpon>gesClipboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\View\gesCSharpComponents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\View\gesCSharpComponents.Designer.cs">
+      <DependentUpon>gesCSharpComponents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\View\gesCSharpControles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\View\gesCSharpControles.designer.cs">
+      <DependentUpon>gesCSharpControles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\View\gesCSharpEventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\View\gesCSharpEventos.designer.cs">
+      <DependentUpon>gesCSharpEventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\View\gesCSharpPrinting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\View\gesCSharpPrinting.designer.cs">
+      <DependentUpon>gesCSharpPrinting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\View\gesDirectorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\View\gesDirectorio.designer.cs">
+      <DependentUpon>gesDirectorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\View\gesReloj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\View\gesReloj.designer.cs">
+      <DependentUpon>gesReloj.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Multimedia\View\gesImagenes.resx">
+      <DependentUpon>gesImagenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multimedia\View\gesPixeles.resx">
+      <DependentUpon>gesPixeles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Networking\View\gesConectividad.resx">
+      <DependentUpon>gesConectividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Networking\View\gesFirewall.resx">
+      <DependentUpon>gesFirewall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Networking\View\gesNavegador.resx">
+      <DependentUpon>gesNavegador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Office\View\gesOfficeExcel.resx">
+      <DependentUpon>gesOfficeExcel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgPOO\View\gesProgClase.resx">
+      <DependentUpon>gesProgClase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programacion\View\gesEstructuraDatos.resx">
+      <DependentUpon>gesEstructuraDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +204,33 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Windows\View\gesArchivo.resx">
+      <DependentUpon>gesArchivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\View\gesBDArchivo.resx">
+      <DependentUpon>gesBDArchivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\View\gesClipboard.resx">
+      <DependentUpon>gesClipboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\View\gesCSharpComponents.resx">
+      <DependentUpon>gesCSharpComponents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\View\gesCSharpControles.resx">
+      <DependentUpon>gesCSharpControles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\View\gesCSharpEventos.resx">
+      <DependentUpon>gesCSharpEventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\View\gesCSharpPrinting.resx">
+      <DependentUpon>gesCSharpPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\View\gesDirectorio.resx">
+      <DependentUpon>gesDirectorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\View\gesReloj.resx">
+      <DependentUpon>gesReloj.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +243,43 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Img\" />
+    <Folder Include="Multimedia\Class\" />
+    <Folder Include="Networking\Class\" />
+    <Folder Include="Seguridad\Class\" />
+    <Folder Include="Seguridad\View\" />
+    <Folder Include="Windows\Class\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
