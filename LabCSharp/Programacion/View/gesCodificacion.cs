@@ -21,5 +21,13 @@ namespace LabCSharp.Programacion.View
         {
 
         }
+
+        private void btnGenerarASCII_Click(object sender, EventArgs e)
+        {
+
+            //for ()
+
+            //dataGridView1.Rows.Add(codigo.ToString(), txtNomyAp.Text, txtDni.Text, txtDomicilio.Text);
+        }
     }
 }

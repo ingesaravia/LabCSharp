@@ -1,4 +1,5 @@
 ﻿using LabCSharp.Office.View;
+using LabCSharp.Programacion.View;
 using LabCSharp.View;
 using LabCSharp.Windows.View;
 using System;
@@ -247,13 +248,9 @@ namespace LabCSharp
 
         private void codificacionToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            /*
-int ascii = Encoding.ASCII.GetBytes("B")[0];
-char ascii2 = (char)66;
-o tambien
-int i = 65;
-char c = (char) i;
-*/
+            gesCodificacion miCodif = new gesCodificacion();
+            miCodif.MdiParent = this;
+            miCodif.Visible = true;
         }
     }
 }
