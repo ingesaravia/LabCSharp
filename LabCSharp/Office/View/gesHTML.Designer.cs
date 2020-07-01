@@ -143,6 +143,7 @@
             this.btnUnir.TabIndex = 3;
             this.btnUnir.Text = "UNIR";
             this.btnUnir.UseVisualStyleBackColor = true;
+            this.btnUnir.Click += new System.EventHandler(this.btnUnir_Click);
             // 
             // btnAbrir
             // 
