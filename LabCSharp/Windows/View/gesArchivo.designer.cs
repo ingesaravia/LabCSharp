@@ -63,9 +63,9 @@
             this.groupBox1.Controls.Add(this.btnExaminar);
             this.groupBox1.Controls.Add(this.txtDirArchivo);
             this.groupBox1.Location = new System.Drawing.Point(2, 2);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(151, 349);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -74,7 +74,7 @@
             // btnExaminar
             // 
             this.btnExaminar.Location = new System.Drawing.Point(76, 321);
-            this.btnExaminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExaminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnExaminar.Name = "btnExaminar";
             this.btnExaminar.Size = new System.Drawing.Size(68, 19);
             this.btnExaminar.TabIndex = 1;
@@ -85,7 +85,7 @@
             // txtDirArchivo
             // 
             this.txtDirArchivo.Location = new System.Drawing.Point(4, 297);
-            this.txtDirArchivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDirArchivo.Margin = new System.Windows.Forms.Padding(2);
             this.txtDirArchivo.Name = "txtDirArchivo";
             this.txtDirArchivo.Size = new System.Drawing.Size(140, 20);
             this.txtDirArchivo.TabIndex = 0;
@@ -95,9 +95,9 @@
             this.groupBox3.Controls.Add(this.button5);
             this.groupBox3.Controls.Add(this.checkedListBox1);
             this.groupBox3.Location = new System.Drawing.Point(4, 221);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(141, 100);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
@@ -106,7 +106,7 @@
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(62, 72);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(70, 19);
             this.button5.TabIndex = 1;
@@ -122,7 +122,7 @@
             "De Sistema",
             "Encriptar"});
             this.checkedListBox1.Location = new System.Drawing.Point(4, 17);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(128, 34);
             this.checkedListBox1.TabIndex = 0;
@@ -130,7 +130,7 @@
             // treeView1
             // 
             this.treeView1.Location = new System.Drawing.Point(7, 20);
-            this.treeView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.treeView1.Margin = new System.Windows.Forms.Padding(2);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(140, 276);
             this.treeView1.TabIndex = 1;
@@ -140,7 +140,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -185,26 +185,26 @@
             // createToolStripMenuItem1
             // 
             this.createToolStripMenuItem1.Name = "createToolStripMenuItem1";
-            this.createToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+            this.createToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.createToolStripMenuItem1.Text = "Create";
             // 
             // readToolStripMenuItem1
             // 
             this.readToolStripMenuItem1.Name = "readToolStripMenuItem1";
-            this.readToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+            this.readToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.readToolStripMenuItem1.Text = "Read";
             this.readToolStripMenuItem1.Click += new System.EventHandler(this.readToolStripMenuItem1_Click);
             // 
             // updateToolStripMenuItem1
             // 
             this.updateToolStripMenuItem1.Name = "updateToolStripMenuItem1";
-            this.updateToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+            this.updateToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.updateToolStripMenuItem1.Text = "Update";
             // 
             // deleteToolStripMenuItem1
             // 
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.deleteToolStripMenuItem1.Text = "Delete";
             // 
             // groupBox4
@@ -213,9 +213,9 @@
             this.groupBox4.Controls.Add(this.listView1);
             this.groupBox4.Controls.Add(this.groupBox3);
             this.groupBox4.Location = new System.Drawing.Point(2, 25);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(304, 326);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
@@ -225,9 +225,9 @@
             // 
             this.groupBox5.Controls.Add(this.txtPropFile);
             this.groupBox5.Location = new System.Drawing.Point(4, 130);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox5.Size = new System.Drawing.Size(295, 91);
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
@@ -236,7 +236,7 @@
             // txtPropFile
             // 
             this.txtPropFile.Location = new System.Drawing.Point(4, 17);
-            this.txtPropFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPropFile.Margin = new System.Windows.Forms.Padding(2);
             this.txtPropFile.Name = "txtPropFile";
             this.txtPropFile.Size = new System.Drawing.Size(282, 70);
             this.txtPropFile.TabIndex = 0;
@@ -245,7 +245,7 @@
             // listView1
             // 
             this.listView1.Location = new System.Drawing.Point(9, 17);
-            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(282, 109);
             this.listView1.TabIndex = 1;
@@ -258,7 +258,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(466, 353);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "gesArchivo";
             this.Text = "gesArchivo";
             this.groupBox1.ResumeLayout(false);

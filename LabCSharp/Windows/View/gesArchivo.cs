@@ -160,6 +160,6 @@ namespace LabCSharp.View
             lector.Close();
         }
 
- 
+
     }
 }

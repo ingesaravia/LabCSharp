@@ -252,5 +252,19 @@ namespace LabCSharp
             miCodif.MdiParent = this;
             miCodif.Visible = true;
         }
+
+        private void consolaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gesConsola miGesConsola = new gesConsola();
+            miGesConsola.MdiParent = this;
+            miGesConsola.Visible = true;
+        }
+
+        private void hTMLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gesHTML miGesHTML = new gesHTML();
+            miGesHTML.MdiParent = this;
+            miGesHTML.Visible = true;
+        }
     }
 }
