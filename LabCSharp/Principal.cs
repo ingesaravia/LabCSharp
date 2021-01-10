@@ -253,18 +253,33 @@ namespace LabCSharp
             miCodif.Visible = true;
         }
 
-        private void consolaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            gesConsola miGesConsola = new gesConsola();
-            miGesConsola.MdiParent = this;
-            miGesConsola.Visible = true;
-        }
 
         private void hTMLToolStripMenuItem_Click(object sender, EventArgs e)
         {
             gesHTML miGesHTML = new gesHTML();
             miGesHTML.MdiParent = this;
             miGesHTML.Visible = true;
+        }
+
+        private void serviciosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gesServicios miGesServicios = new gesServicios();
+            miGesServicios.MdiParent = this;
+            miGesServicios.Visible = true;
+        }
+
+        private void consolaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            gesConsola miGesConsola = new gesConsola();
+            miGesConsola.MdiParent = this;
+            miGesConsola.Visible = true;
+        }
+
+        private void relojToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            gesReloj miGesReloj = new gesReloj();
+            miGesReloj.MdiParent = this;
+            miGesReloj.Visible = true;
         }
     }
 }
