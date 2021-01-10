@@ -11,11 +11,11 @@ using TaskScheduler;
 
 namespace LabCSharp.Windows.View
 {
-    public partial class GesTasks : Form
+    public partial class gesTasks : Form
     {
         //Requiere Reference COMM > TaskScheduler
         public Task miTarea;
-        public GesTasks()
+        public gesTasks()
         {
             InitializeComponent();
         }

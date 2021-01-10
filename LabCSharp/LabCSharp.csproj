@@ -205,11 +205,11 @@
     <Compile Include="Windows\View\gesServicios.Designer.cs">
       <DependentUpon>gesServicios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Windows\View\GesTasks.cs">
+    <Compile Include="Windows\View\gesTasks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Windows\View\GesTasks.Designer.cs">
-      <DependentUpon>GesTasks.cs</DependentUpon>
+    <Compile Include="Windows\View\gesTasks.Designer.cs">
+      <DependentUpon>gesTasks.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Multimedia\View\gesImagenes.resx">
       <DependentUpon>gesImagenes.cs</DependentUpon>
@@ -286,8 +286,8 @@
     <EmbeddedResource Include="Windows\View\gesServicios.resx">
       <DependentUpon>gesServicios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Windows\View\GesTasks.resx">
-      <DependentUpon>GesTasks.cs</DependentUpon>
+    <EmbeddedResource Include="Windows\View\gesTasks.resx">
+      <DependentUpon>gesTasks.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -348,6 +348,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Code.ico" />
+    <Content Include="Help\Data.html" />
     <Content Include="Img\Code.ico" />
     <Content Include="Img\fondo1.jpg" />
     <Content Include="Img\fondo2.jpg" />

@@ -1,6 +1,6 @@
 ﻿namespace LabCSharp.Windows.View
 {
-    partial class GesTasks
+    partial class gesTasks
     {
         /// <summary>
         /// Required designer variable.
