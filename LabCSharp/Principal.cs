@@ -190,5 +190,10 @@ namespace LabCSharp
         {
             //Abrir archivo HTML
         }
+
+        private void networkingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

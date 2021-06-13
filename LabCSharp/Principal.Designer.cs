@@ -429,6 +429,7 @@
             this.networkingToolStripMenuItem.Name = "networkingToolStripMenuItem";
             this.networkingToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.networkingToolStripMenuItem.Text = "Networking";
+            this.networkingToolStripMenuItem.Click += new System.EventHandler(this.networkingToolStripMenuItem_Click);
             // 
             // conectividadToolStripMenuItem
             // 
