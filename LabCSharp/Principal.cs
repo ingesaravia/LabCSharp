@@ -195,5 +195,10 @@ namespace LabCSharp
         {
 
         }
+
+        private void dMARCAnalyserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -8,20 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LabCSharp.View
+namespace LabCSharp.Seguridad.View
 {
-    public partial class gesFirewall : Form
+    public partial class gesEmail : Form
     {
-        public gesFirewall()
+        public gesEmail()
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
     }
 }

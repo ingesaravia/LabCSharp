@@ -51,26 +51,27 @@
             this.wCFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.threadingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.archivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.carpetasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.officeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.outlookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.excelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hTMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msconfigToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regeditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bATCHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.archivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.impresoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.variosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consolaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.clipbaoardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relojToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.versionNETToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.officeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.wordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.outlookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.excelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hTMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.impresoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.networkingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conectividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.firewallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,7 +90,9 @@
             this.estructurasRepetitivasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.carpetasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.correosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.dMARCAnalyserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -283,6 +286,66 @@
             this.windowsToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.windowsToolStripMenuItem.Text = "Windows";
             // 
+            // archivosToolStripMenuItem
+            // 
+            this.archivosToolStripMenuItem.Name = "archivosToolStripMenuItem";
+            this.archivosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.archivosToolStripMenuItem.Text = "Archivos";
+            this.archivosToolStripMenuItem.Click += new System.EventHandler(this.archivosToolStripMenuItem_Click);
+            // 
+            // carpetasToolStripMenuItem
+            // 
+            this.carpetasToolStripMenuItem.Name = "carpetasToolStripMenuItem";
+            this.carpetasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.carpetasToolStripMenuItem.Text = "Carpetas";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            // 
+            // officeToolStripMenuItem
+            // 
+            this.officeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.wordToolStripMenuItem,
+            this.outlookToolStripMenuItem,
+            this.excelToolStripMenuItem,
+            this.hTMLToolStripMenuItem});
+            this.officeToolStripMenuItem.Name = "officeToolStripMenuItem";
+            this.officeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.officeToolStripMenuItem.Text = "Office";
+            // 
+            // wordToolStripMenuItem
+            // 
+            this.wordToolStripMenuItem.Name = "wordToolStripMenuItem";
+            this.wordToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.wordToolStripMenuItem.Text = "Word";
+            // 
+            // outlookToolStripMenuItem
+            // 
+            this.outlookToolStripMenuItem.Name = "outlookToolStripMenuItem";
+            this.outlookToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.outlookToolStripMenuItem.Text = "Outlook";
+            // 
+            // excelToolStripMenuItem
+            // 
+            this.excelToolStripMenuItem.Name = "excelToolStripMenuItem";
+            this.excelToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.excelToolStripMenuItem.Text = "Excel";
+            this.excelToolStripMenuItem.Click += new System.EventHandler(this.excelToolStripMenuItem_Click);
+            // 
+            // hTMLToolStripMenuItem
+            // 
+            this.hTMLToolStripMenuItem.Name = "hTMLToolStripMenuItem";
+            this.hTMLToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.hTMLToolStripMenuItem.Text = "HTML";
+            this.hTMLToolStripMenuItem.Click += new System.EventHandler(this.hTMLToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            // 
             // serviciosToolStripMenuItem
             // 
             this.serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
@@ -322,17 +385,12 @@
             this.bATCHToolStripMenuItem.Text = "BATCH";
             this.bATCHToolStripMenuItem.Click += new System.EventHandler(this.bATCHToolStripMenuItem_Click);
             // 
-            // toolStripSeparator1
+            // impresoraToolStripMenuItem
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
-            // archivosToolStripMenuItem
-            // 
-            this.archivosToolStripMenuItem.Name = "archivosToolStripMenuItem";
-            this.archivosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.archivosToolStripMenuItem.Text = "Archivos";
-            this.archivosToolStripMenuItem.Click += new System.EventHandler(this.archivosToolStripMenuItem_Click);
+            this.impresoraToolStripMenuItem.Name = "impresoraToolStripMenuItem";
+            this.impresoraToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.impresoraToolStripMenuItem.Text = "Impresora";
+            this.impresoraToolStripMenuItem.Click += new System.EventHandler(this.impresoraToolStripMenuItem_Click);
             // 
             // variosToolStripMenuItem
             // 
@@ -348,77 +406,28 @@
             // consolaToolStripMenuItem1
             // 
             this.consolaToolStripMenuItem1.Name = "consolaToolStripMenuItem1";
-            this.consolaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.consolaToolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
             this.consolaToolStripMenuItem1.Text = "Consola";
             this.consolaToolStripMenuItem1.Click += new System.EventHandler(this.consolaToolStripMenuItem1_Click);
             // 
             // clipbaoardToolStripMenuItem
             // 
             this.clipbaoardToolStripMenuItem.Name = "clipbaoardToolStripMenuItem";
-            this.clipbaoardToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clipbaoardToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.clipbaoardToolStripMenuItem.Text = "Clipboard";
             // 
             // relojToolStripMenuItem1
             // 
             this.relojToolStripMenuItem1.Name = "relojToolStripMenuItem1";
-            this.relojToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.relojToolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
             this.relojToolStripMenuItem1.Text = "Reloj";
             this.relojToolStripMenuItem1.Click += new System.EventHandler(this.relojToolStripMenuItem1_Click);
             // 
             // versionNETToolStripMenuItem
             // 
             this.versionNETToolStripMenuItem.Name = "versionNETToolStripMenuItem";
-            this.versionNETToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.versionNETToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.versionNETToolStripMenuItem.Text = "Version .NET";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
-            // 
-            // officeToolStripMenuItem
-            // 
-            this.officeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.wordToolStripMenuItem,
-            this.outlookToolStripMenuItem,
-            this.excelToolStripMenuItem,
-            this.hTMLToolStripMenuItem});
-            this.officeToolStripMenuItem.Name = "officeToolStripMenuItem";
-            this.officeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.officeToolStripMenuItem.Text = "Office";
-            // 
-            // wordToolStripMenuItem
-            // 
-            this.wordToolStripMenuItem.Name = "wordToolStripMenuItem";
-            this.wordToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.wordToolStripMenuItem.Text = "Word";
-            // 
-            // outlookToolStripMenuItem
-            // 
-            this.outlookToolStripMenuItem.Name = "outlookToolStripMenuItem";
-            this.outlookToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.outlookToolStripMenuItem.Text = "Outlook";
-            // 
-            // excelToolStripMenuItem
-            // 
-            this.excelToolStripMenuItem.Name = "excelToolStripMenuItem";
-            this.excelToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.excelToolStripMenuItem.Text = "Excel";
-            this.excelToolStripMenuItem.Click += new System.EventHandler(this.excelToolStripMenuItem_Click);
-            // 
-            // hTMLToolStripMenuItem
-            // 
-            this.hTMLToolStripMenuItem.Name = "hTMLToolStripMenuItem";
-            this.hTMLToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.hTMLToolStripMenuItem.Text = "HTML";
-            this.hTMLToolStripMenuItem.Click += new System.EventHandler(this.hTMLToolStripMenuItem_Click);
-            // 
-            // impresoraToolStripMenuItem
-            // 
-            this.impresoraToolStripMenuItem.Name = "impresoraToolStripMenuItem";
-            this.impresoraToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.impresoraToolStripMenuItem.Text = "Impresora";
-            this.impresoraToolStripMenuItem.Click += new System.EventHandler(this.impresoraToolStripMenuItem_Click);
             // 
             // networkingToolStripMenuItem
             // 
@@ -457,7 +466,9 @@
             this.seguridadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.criptologiaToolStripMenuItem,
             this.malwareToolStripMenuItem,
-            this.keyloggerToolStripMenuItem});
+            this.keyloggerToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.correosToolStripMenuItem});
             this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
             this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.seguridadToolStripMenuItem.Text = "Seguridad";
@@ -553,11 +564,25 @@
             this.dataToolStripMenuItem.Text = "Data";
             this.dataToolStripMenuItem.Click += new System.EventHandler(this.dataToolStripMenuItem_Click);
             // 
-            // carpetasToolStripMenuItem
+            // correosToolStripMenuItem
             // 
-            this.carpetasToolStripMenuItem.Name = "carpetasToolStripMenuItem";
-            this.carpetasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.carpetasToolStripMenuItem.Text = "Carpetas";
+            this.correosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dMARCAnalyserToolStripMenuItem});
+            this.correosToolStripMenuItem.Name = "correosToolStripMenuItem";
+            this.correosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.correosToolStripMenuItem.Text = "Emails";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(149, 6);
+            // 
+            // dMARCAnalyserToolStripMenuItem
+            // 
+            this.dMARCAnalyserToolStripMenuItem.Name = "dMARCAnalyserToolStripMenuItem";
+            this.dMARCAnalyserToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.dMARCAnalyserToolStripMenuItem.Text = "DMARC Analyser";
+            this.dMARCAnalyserToolStripMenuItem.Click += new System.EventHandler(this.dMARCAnalyserToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -641,6 +666,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem dataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem carpetasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem correosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dMARCAnalyserToolStripMenuItem;
     }
 }
 
