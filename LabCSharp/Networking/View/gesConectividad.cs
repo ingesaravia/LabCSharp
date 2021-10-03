@@ -117,6 +117,11 @@ namespace LabCSharp.View
         {
             
         }
+
+        private void btnNavegarURL_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
