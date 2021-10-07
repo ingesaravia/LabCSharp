@@ -22,6 +22,9 @@ namespace LabCSharp.View
 
         }
 
+        private void btnDesbloquearEntrante_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

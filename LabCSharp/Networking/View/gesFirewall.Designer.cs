@@ -135,6 +135,7 @@
             this.btnDesbloquearEntrante.TabIndex = 2;
             this.btnDesbloquearEntrante.Text = "DESBLOQUEAR";
             this.btnDesbloquearEntrante.UseVisualStyleBackColor = true;
+            this.btnDesbloquearEntrante.Click += new System.EventHandler(this.btnDesbloquearEntrante_Click);
             // 
             // btnBloquearEntrante
             // 
