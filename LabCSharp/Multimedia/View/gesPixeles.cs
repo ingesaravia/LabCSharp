@@ -83,5 +83,10 @@ namespace LabCSharp.View
         {
             pictureBox1.Image = miBitmap;
         }
+
+        private void btnEjecutar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

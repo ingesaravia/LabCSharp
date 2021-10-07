@@ -177,7 +177,7 @@ namespace LabCSharp.Windows.View
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(466, 353);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(752, 537);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // tabControl1
@@ -193,7 +193,7 @@ namespace LabCSharp.Windows.View
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(464, 351);
+            this.tabControl1.Size = new System.Drawing.Size(739, 524);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage6
@@ -202,7 +202,7 @@ namespace LabCSharp.Windows.View
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(456, 325);
+            this.tabPage6.Size = new System.Drawing.Size(731, 498);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "GridView";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1337,7 +1337,7 @@ namespace LabCSharp.Windows.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(466, 353);
+            this.ClientSize = new System.Drawing.Size(752, 537);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "gesCSharpControles";

@@ -122,6 +122,20 @@ namespace LabCSharp.View
         {
 
         }
+
+        private void btnCalcEjecutar_Click(object sender, EventArgs e)
+        {
+            double Cantidad = Convert.ToDouble(txtCalcCantidad.ToString());
+            string UnidadOrigen = cmbUnidadOrigen.SelectedItem.ToString();
+            string UnidadDestino = cmbUnidadDestino.SelectedItem.ToString();
+
+            if ((UnidadOrigen == "Mbps") && (UnidadDestino == "MBps"))
+            {
+                double CantidadDestino = Cantidad / 8;
+                txtCalcOutput.AppendText(Cantidad + " " + UnidadOrigen + " equivale a " + CantidadDestino + " " + UnidadDestino);
+            }
+        
+        }
     }
 
 

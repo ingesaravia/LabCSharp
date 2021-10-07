@@ -75,5 +75,37 @@ namespace LabCSharp.View
 
         }
 
+        private void btnGenerarASCII_Click(object sender, EventArgs e)
+        {
+            //for ()
+
+            //dataGridView1.Rows.Add(codigo.ToString(), txtNomyAp.Text, txtDni.Text, txtDomicilio.Text);
+        }
+
+        private void btnGenArreglo_Click(object sender, EventArgs e)
+        {
+            string cadena;
+
+            if (rbtnArregloEnt.Checked)
+            {
+                txtArreglosRes.AppendText("La estructura de un arreglo de enteros se define como: \n");
+                txtArreglosRes.AppendText("int[] arregloEnteros = ; \n");
+
+            }
+                
+            
+        }
+
+        private void btnEstrucMientras_Click(object sender, EventArgs e)
+        {
+            //string estrucSelec = cmbEstrucSelect.SelectedItem.ToString();
+
+            rtxtEstrucRes.AppendText("While (condición) \n");
+            rtxtEstrucRes.AppendText("{ \n");
+            rtxtEstrucRes.AppendText("//realizar acciones \n");
+            rtxtEstrucRes.AppendText("} \n");
+            
+
+        }
     }
 }

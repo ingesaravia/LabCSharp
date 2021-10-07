@@ -40,7 +40,7 @@
             // 
             // btnExcel
             // 
-            this.btnExcel.Location = new System.Drawing.Point(250, 151);
+            this.btnExcel.Location = new System.Drawing.Point(368, 51);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Size = new System.Drawing.Size(75, 23);
             this.btnExcel.TabIndex = 0;
@@ -55,7 +55,7 @@
             this.tabControl1.Location = new System.Drawing.Point(3, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(460, 347);
+            this.tabControl1.Size = new System.Drawing.Size(749, 531);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -64,7 +64,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(452, 321);
+            this.tabPage1.Size = new System.Drawing.Size(741, 505);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Recorrido Archivo";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -74,7 +74,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(452, 321);
+            this.tabPage2.Size = new System.Drawing.Size(741, 505);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Combinar Archivos";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -85,14 +85,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(466, 353);
+            this.panel1.Size = new System.Drawing.Size(752, 537);
             this.panel1.TabIndex = 2;
             // 
             // gesOfficeExcel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(466, 353);
+            this.ClientSize = new System.Drawing.Size(752, 537);
             this.Controls.Add(this.panel1);
             this.Name = "gesOfficeExcel";
             this.Text = "gesOfficeExcel";

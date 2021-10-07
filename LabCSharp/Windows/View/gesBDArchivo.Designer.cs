@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.dataGridViewBDArchivo = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.txtNomAp = new System.Windows.Forms.TextBox();
-            this.txtDomicilio = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtDomicilio = new System.Windows.Forms.TextBox();
+            this.txtNomAp = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.dataGridViewBDArchivo = new System.Windows.Forms.DataGridView();
             this.numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBDArchivo)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBDArchivo)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -69,9 +69,36 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(466, 354);
-            this.splitContainer1.SplitterDistance = 155;
+            this.splitContainer1.Size = new System.Drawing.Size(752, 537);
+            this.splitContainer1.SplitterDistance = 250;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Location = new System.Drawing.Point(3, 3);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(149, 348);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(6, 293);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(137, 20);
+            this.textBox3.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(68, 319);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "EXAMINAR";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // splitContainer2
             // 
@@ -87,22 +114,9 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.dataGridViewBDArchivo);
-            this.splitContainer2.Size = new System.Drawing.Size(307, 354);
-            this.splitContainer2.SplitterDistance = 102;
+            this.splitContainer2.Size = new System.Drawing.Size(498, 537);
+            this.splitContainer2.SplitterDistance = 154;
             this.splitContainer2.TabIndex = 0;
-            // 
-            // dataGridViewBDArchivo
-            // 
-            this.dataGridViewBDArchivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewBDArchivo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.numero,
-            this.nombreApellido,
-            this.domicilio});
-            this.dataGridViewBDArchivo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewBDArchivo.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewBDArchivo.Name = "dataGridViewBDArchivo";
-            this.dataGridViewBDArchivo.Size = new System.Drawing.Size(307, 248);
-            this.dataGridViewBDArchivo.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -118,29 +132,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
             // 
-            // btnGuardar
+            // label2
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(220, 67);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 0;
-            this.btnGuardar.Text = "GUARDAR";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // txtNomAp
-            // 
-            this.txtNomAp.Location = new System.Drawing.Point(119, 19);
-            this.txtNomAp.Name = "txtNomAp";
-            this.txtNomAp.Size = new System.Drawing.Size(176, 20);
-            this.txtNomAp.TabIndex = 1;
-            // 
-            // txtDomicilio
-            // 
-            this.txtDomicilio.Location = new System.Drawing.Point(119, 45);
-            this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(176, 20);
-            this.txtDomicilio.TabIndex = 2;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(64, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Domicilio";
             // 
             // label1
             // 
@@ -151,14 +150,42 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Nombre y Apellido";
             // 
-            // label2
+            // txtDomicilio
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(64, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Domicilio";
+            this.txtDomicilio.Location = new System.Drawing.Point(119, 45);
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Size = new System.Drawing.Size(176, 20);
+            this.txtDomicilio.TabIndex = 2;
+            // 
+            // txtNomAp
+            // 
+            this.txtNomAp.Location = new System.Drawing.Point(119, 19);
+            this.txtNomAp.Name = "txtNomAp";
+            this.txtNomAp.Size = new System.Drawing.Size(176, 20);
+            this.txtNomAp.TabIndex = 1;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(220, 67);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 0;
+            this.btnGuardar.Text = "GUARDAR";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // dataGridViewBDArchivo
+            // 
+            this.dataGridViewBDArchivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewBDArchivo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.numero,
+            this.nombreApellido,
+            this.domicilio});
+            this.dataGridViewBDArchivo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewBDArchivo.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewBDArchivo.Name = "dataGridViewBDArchivo";
+            this.dataGridViewBDArchivo.Size = new System.Drawing.Size(498, 379);
+            this.dataGridViewBDArchivo.TabIndex = 0;
             // 
             // numero
             // 
@@ -178,38 +205,11 @@
             this.domicilio.HeaderText = "Domicilio";
             this.domicilio.Name = "domicilio";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(3, 3);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(149, 348);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(68, 319);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "EXAMINAR";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(6, 293);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(137, 20);
-            this.textBox3.TabIndex = 1;
-            // 
             // gesBDArchivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(466, 354);
+            this.ClientSize = new System.Drawing.Size(752, 537);
             this.Controls.Add(this.splitContainer1);
             this.Name = "gesBDArchivo";
             this.Text = "gesBDArchivo";
@@ -218,15 +218,15 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBDArchivo)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBDArchivo)).EndInit();
             this.ResumeLayout(false);
 
         }

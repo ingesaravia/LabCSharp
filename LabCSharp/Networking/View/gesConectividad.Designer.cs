@@ -88,6 +88,14 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.btnGuardarCalc = new System.Windows.Forms.Button();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.txtCalcCantidad = new System.Windows.Forms.TextBox();
+            this.cmbUnidadOrigen = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cmbUnidadDestino = new System.Windows.Forms.ComboBox();
+            this.btnCalcEjecutar = new System.Windows.Forms.Button();
             this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -124,6 +132,7 @@
             this.splitContainer3.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage5
@@ -780,6 +789,7 @@
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.groupBox7, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.groupBox8, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
@@ -814,6 +824,100 @@
             this.btnGuardarCalc.TabIndex = 1;
             this.btnGuardarCalc.Text = "GUARDAR";
             this.btnGuardarCalc.UseVisualStyleBackColor = true;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.btnCalcEjecutar);
+            this.groupBox8.Controls.Add(this.label6);
+            this.groupBox8.Controls.Add(this.cmbUnidadDestino);
+            this.groupBox8.Controls.Add(this.label5);
+            this.groupBox8.Controls.Add(this.label4);
+            this.groupBox8.Controls.Add(this.cmbUnidadOrigen);
+            this.groupBox8.Controls.Add(this.txtCalcCantidad);
+            this.groupBox8.Location = new System.Drawing.Point(3, 3);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(221, 374);
+            this.groupBox8.TabIndex = 1;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Convertir";
+            // 
+            // txtCalcCantidad
+            // 
+            this.txtCalcCantidad.Location = new System.Drawing.Point(83, 19);
+            this.txtCalcCantidad.Name = "txtCalcCantidad";
+            this.txtCalcCantidad.Size = new System.Drawing.Size(132, 20);
+            this.txtCalcCantidad.TabIndex = 0;
+            // 
+            // cmbUnidadOrigen
+            // 
+            this.cmbUnidadOrigen.FormattingEnabled = true;
+            this.cmbUnidadOrigen.Items.AddRange(new object[] {
+            "bps",
+            "Kbps",
+            "Mbps",
+            "Gbps",
+            "Bps",
+            "KBps",
+            "MBps",
+            "GBps"});
+            this.cmbUnidadOrigen.Location = new System.Drawing.Point(83, 45);
+            this.cmbUnidadOrigen.Name = "cmbUnidadOrigen";
+            this.cmbUnidadOrigen.Size = new System.Drawing.Size(132, 21);
+            this.cmbUnidadOrigen.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(28, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Cantidad";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 48);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Unidad Origen";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(1, 75);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Unidad Destino";
+            // 
+            // cmbUnidadDestino
+            // 
+            this.cmbUnidadDestino.FormattingEnabled = true;
+            this.cmbUnidadDestino.Items.AddRange(new object[] {
+            "bps",
+            "Kbps",
+            "Mbps",
+            "Gbps",
+            "Bps",
+            "KBps",
+            "MBps",
+            "GBps"});
+            this.cmbUnidadDestino.Location = new System.Drawing.Point(83, 72);
+            this.cmbUnidadDestino.Name = "cmbUnidadDestino";
+            this.cmbUnidadDestino.Size = new System.Drawing.Size(132, 21);
+            this.cmbUnidadDestino.TabIndex = 4;
+            // 
+            // btnCalcEjecutar
+            // 
+            this.btnCalcEjecutar.Location = new System.Drawing.Point(140, 99);
+            this.btnCalcEjecutar.Name = "btnCalcEjecutar";
+            this.btnCalcEjecutar.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcEjecutar.TabIndex = 6;
+            this.btnCalcEjecutar.Text = "EJECUTAR";
+            this.btnCalcEjecutar.UseVisualStyleBackColor = true;
+            this.btnCalcEjecutar.Click += new System.EventHandler(this.btnCalcEjecutar_Click);
             // 
             // gesConectividad
             // 
@@ -869,6 +973,8 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -935,5 +1041,13 @@
         private System.Windows.Forms.Button btnDesbloquearSaliente;
         private System.Windows.Forms.Button btnBloquearSaliente;
         private System.Windows.Forms.DataGridView dataGridView2Salientes;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Button btnCalcEjecutar;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmbUnidadDestino;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cmbUnidadOrigen;
+        private System.Windows.Forms.TextBox txtCalcCantidad;
     }
 }

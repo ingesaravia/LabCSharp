@@ -1,15 +1,8 @@
 ﻿using LabCSharp.Office.View;
-using LabCSharp.Programacion.View;
 using LabCSharp.View;
 using LabCSharp.Windows.View;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LabCSharp
@@ -101,13 +94,6 @@ namespace LabCSharp
             miCSC.Visible = true;
         }
 
-        private void impresoraToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            gesCSharpPrinting miGCSP = new gesCSharpPrinting();
-            miGCSP.MdiParent = this;
-            miGCSP.Visible = true;
-        }
-
         private void eventosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             gesCSharpEventos miGCSE = new gesCSharpEventos();
@@ -138,9 +124,9 @@ namespace LabCSharp
 
         private void firewallToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            gesFirewall miFirewall = new gesFirewall();
-            miFirewall.MdiParent = this;
-            miFirewall.Visible = true;
+            gesConectividad miConectividad = new gesConectividad();
+            miConectividad.MdiParent = this;
+            miConectividad.Visible = true;
         }
 
         private void navegadorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -149,14 +135,6 @@ namespace LabCSharp
             miNav.MdiParent = this;
             miNav.Visible = true;
         }
-
-        private void codificacionToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            gesCodificacion miCodif = new gesCodificacion();
-            miCodif.MdiParent = this;
-            miCodif.Visible = true;
-        }
-
 
         private void hTMLToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -170,20 +148,6 @@ namespace LabCSharp
             gesServicios miGesServicios = new gesServicios();
             miGesServicios.MdiParent = this;
             miGesServicios.Visible = true;
-        }
-
-        private void consolaToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            gesConsola miGesConsola = new gesConsola();
-            miGesConsola.MdiParent = this;
-            miGesConsola.Visible = true;
-        }
-
-        private void relojToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            gesReloj miGesReloj = new gesReloj();
-            miGesReloj.MdiParent = this;
-            miGesReloj.Visible = true;
         }
 
         private void dataToolStripMenuItem_Click(object sender, EventArgs e)
@@ -200,5 +164,31 @@ namespace LabCSharp
         {
 
         }
+
+        private void outlookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void estructurasRepetitivasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void arrayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gesEstructuraDatos miGesED = new gesEstructuraDatos();
+            miGesED.MdiParent = this;
+            miGesED.Visible = true;
+        }
+
+        private void estructurasRepetitivasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gesEstructuraDatos miGesED = new gesEstructuraDatos();
+            miGesED.MdiParent = this;
+            miGesED.Visible = true;
+        }
+
+
     }
 }

@@ -77,12 +77,6 @@
     <Compile Include="Networking\View\gesConectividad.Designer.cs">
       <DependentUpon>gesConectividad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Networking\View\gesFirewall.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Networking\View\gesFirewall.Designer.cs">
-      <DependentUpon>gesFirewall.cs</DependentUpon>
-    </Compile>
     <Compile Include="Networking\View\gesNavegador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,12 +116,6 @@
     <Compile Include="Programacion\Class\claseListas.cs" />
     <Compile Include="Programacion\Class\claseRegistro.cs" />
     <Compile Include="Programacion\Class\GenAleatorio.cs" />
-    <Compile Include="Programacion\View\gesCodificacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Programacion\View\gesCodificacion.Designer.cs">
-      <DependentUpon>gesCodificacion.cs</DependentUpon>
-    </Compile>
     <Compile Include="Programacion\View\gesEstructuraDatos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,12 +151,6 @@
     <Compile Include="Windows\View\gesClipboard.designer.cs">
       <DependentUpon>gesClipboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Windows\View\gesConsola.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Windows\View\gesConsola.Designer.cs">
-      <DependentUpon>gesConsola.cs</DependentUpon>
-    </Compile>
     <Compile Include="Windows\View\gesCSharpComponents.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,35 +169,11 @@
     <Compile Include="Windows\View\gesCSharpEventos.designer.cs">
       <DependentUpon>gesCSharpEventos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Windows\View\gesCSharpPrinting.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Windows\View\gesCSharpPrinting.designer.cs">
-      <DependentUpon>gesCSharpPrinting.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\View\gesDirectorio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Windows\View\gesDirectorio.designer.cs">
-      <DependentUpon>gesDirectorio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\View\gesReloj.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Windows\View\gesReloj.designer.cs">
-      <DependentUpon>gesReloj.cs</DependentUpon>
-    </Compile>
     <Compile Include="Windows\View\gesServicios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Windows\View\gesServicios.Designer.cs">
       <DependentUpon>gesServicios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\View\gesTasks.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Windows\View\gesTasks.Designer.cs">
-      <DependentUpon>gesTasks.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Multimedia\View\gesImagenes.resx">
       <DependentUpon>gesImagenes.cs</DependentUpon>
@@ -225,9 +183,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Networking\View\gesConectividad.resx">
       <DependentUpon>gesConectividad.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Networking\View\gesFirewall.resx">
-      <DependentUpon>gesFirewall.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Networking\View\gesNavegador.resx">
       <DependentUpon>gesNavegador.cs</DependentUpon>
@@ -243,9 +198,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProgPOO\View\gesProgClase.resx">
       <DependentUpon>gesProgClase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Programacion\View\gesCodificacion.resx">
-      <DependentUpon>gesCodificacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Programacion\View\gesEstructuraDatos.resx">
       <DependentUpon>gesEstructuraDatos.cs</DependentUpon>
@@ -271,9 +223,6 @@
     <EmbeddedResource Include="Windows\View\gesClipboard.resx">
       <DependentUpon>gesClipboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Windows\View\gesConsola.resx">
-      <DependentUpon>gesConsola.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Windows\View\gesCSharpComponents.resx">
       <DependentUpon>gesCSharpComponents.cs</DependentUpon>
     </EmbeddedResource>
@@ -283,20 +232,8 @@
     <EmbeddedResource Include="Windows\View\gesCSharpEventos.resx">
       <DependentUpon>gesCSharpEventos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Windows\View\gesCSharpPrinting.resx">
-      <DependentUpon>gesCSharpPrinting.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Windows\View\gesDirectorio.resx">
-      <DependentUpon>gesDirectorio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Windows\View\gesReloj.resx">
-      <DependentUpon>gesReloj.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Windows\View\gesServicios.resx">
       <DependentUpon>gesServicios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Windows\View\gesTasks.resx">
-      <DependentUpon>gesTasks.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
