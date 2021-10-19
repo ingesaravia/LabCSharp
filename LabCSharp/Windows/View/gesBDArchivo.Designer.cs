@@ -79,7 +79,7 @@
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(149, 348);
+            this.groupBox2.Size = new System.Drawing.Size(245, 348);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
@@ -99,6 +99,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "EXAMINAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // splitContainer2
             // 

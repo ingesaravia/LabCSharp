@@ -160,6 +160,11 @@ namespace LabCSharp.View
             lector.Close();
         }
 
-
+        private void btnArchivoListar_Click(object sender, EventArgs e)
+        {
+            string comando1 = "@echo off";
+            string comando2 = "dir C:\\TCI - GECOMP\\ / s / b > 00 - ARCHIVOS.txt";
+            string comando3 = "dir C:\\TCI - GECOMP\\ / s > 01 - ALMACENAMIENTO.txt";
+        }
     }
 }

@@ -26,6 +26,26 @@ namespace LabCSharp.Office
             
         }
 
+        public void combinarHojas()
+        {
+            //declaracion de variables de Excel
+            Application miExcel = new Application();
+            Workbook miWorkbook = miExcel.Workbooks.Open(dirArchivo);
+
+            //contar cantidad de hojas
+            Worksheet miWorksheetDestino = miWorkbook.Sheets[1];
+            int cantWS = miWorkbook.Sheets.Count;
+
+            for (int i=2; i<= cantWS; i++)
+            {
+                miWorksheetDestino.Copy(miExcel.ActiveWorkbook.Worksheets[i]);
+            }
+
+            miWorkbook.Save();
+            miWorkbook.Close();
+            miExcel.Quit();
+        }
+
         public void generarListado(string dirArchivo)
         {
             //declaracion de arreglos

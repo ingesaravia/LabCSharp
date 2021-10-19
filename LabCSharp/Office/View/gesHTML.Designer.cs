@@ -39,13 +39,17 @@
             this.txtDireccionArchivo = new System.Windows.Forms.TextBox();
             this.txtDireccionArchivoFinal = new System.Windows.Forms.TextBox();
             this.btnAbrir = new System.Windows.Forms.Button();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,6 +73,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.splitContainer2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -112,7 +117,7 @@
             // 
             // btnUnir
             // 
-            this.btnUnir.Location = new System.Drawing.Point(368, 120);
+            this.btnUnir.Location = new System.Drawing.Point(654, 120);
             this.btnUnir.Name = "btnUnir";
             this.btnUnir.Size = new System.Drawing.Size(75, 23);
             this.btnUnir.TabIndex = 3;
@@ -124,13 +129,13 @@
             // 
             this.rtxtArchivos.Location = new System.Drawing.Point(3, 31);
             this.rtxtArchivos.Name = "rtxtArchivos";
-            this.rtxtArchivos.Size = new System.Drawing.Size(440, 83);
+            this.rtxtArchivos.Size = new System.Drawing.Size(726, 83);
             this.rtxtArchivos.TabIndex = 2;
             this.rtxtArchivos.Text = "";
             // 
             // btnExaminar
             // 
-            this.btnExaminar.Location = new System.Drawing.Point(3, 3);
+            this.btnExaminar.Location = new System.Drawing.Point(3, 5);
             this.btnExaminar.Name = "btnExaminar";
             this.btnExaminar.Size = new System.Drawing.Size(75, 23);
             this.btnExaminar.TabIndex = 1;
@@ -140,16 +145,16 @@
             // 
             // txtDireccionArchivo
             // 
-            this.txtDireccionArchivo.Location = new System.Drawing.Point(84, 5);
+            this.txtDireccionArchivo.Location = new System.Drawing.Point(84, 7);
             this.txtDireccionArchivo.Name = "txtDireccionArchivo";
-            this.txtDireccionArchivo.Size = new System.Drawing.Size(359, 20);
+            this.txtDireccionArchivo.Size = new System.Drawing.Size(645, 20);
             this.txtDireccionArchivo.TabIndex = 0;
             // 
             // txtDireccionArchivoFinal
             // 
             this.txtDireccionArchivoFinal.Location = new System.Drawing.Point(84, 5);
             this.txtDireccionArchivoFinal.Name = "txtDireccionArchivoFinal";
-            this.txtDireccionArchivoFinal.Size = new System.Drawing.Size(359, 20);
+            this.txtDireccionArchivoFinal.Size = new System.Drawing.Size(645, 20);
             this.txtDireccionArchivoFinal.TabIndex = 1;
             // 
             // btnAbrir
@@ -161,6 +166,15 @@
             this.btnAbrir.Text = "ABRIR";
             this.btnAbrir.UseVisualStyleBackColor = true;
             // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer2.Name = "splitContainer2";
+            this.splitContainer2.Size = new System.Drawing.Size(732, 499);
+            this.splitContainer2.SplitterDistance = 244;
+            this.splitContainer2.TabIndex = 0;
+            // 
             // gesHTML
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,6 +185,7 @@
             this.Text = "gesHTML";
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
@@ -178,6 +193,8 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -195,5 +212,6 @@
         private System.Windows.Forms.TextBox txtDireccionArchivo;
         private System.Windows.Forms.TextBox txtDireccionArchivoFinal;
         private System.Windows.Forms.Button btnAbrir;
+        private System.Windows.Forms.SplitContainer splitContainer2;
     }
 }

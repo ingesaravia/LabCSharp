@@ -16,8 +16,30 @@ namespace LabCSharp.Office.View
             claseExcel miExcel = new claseExcel();
             miExcel.generarListado("D:\\listado.xlsx");
 
+        }
 
+        private void btnCombHojasEjecutar_Click(object sender, EventArgs e)
+        {
+            claseExcel miExcel = new claseExcel();
+            miExcel.generarListado("D:\\listado.xlsx");
+        }
 
+        private void btnCombHojaExam_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog miOpenF = new OpenFileDialog();
+            miOpenF.Filter = "excel files (*.xlsx)|*.xls" + "|All files (*.*)|*.*";
+            miOpenF.Multiselect = false;
+            miOpenF.Title = "Seleccione la carpeta donde se encuentra el archivo";
+
+            if (miOpenF.ShowDialog() == DialogResult.OK)
+            {
+                txtCombHojadirArchivo.Text = miOpenF.FileName;
+                claseExcel miExcel = new claseExcel();
+                miExcel.dirArchivo = txtCombHojadirArchivo.Text;
+
+                
+
+            }
         }
     }
 }
