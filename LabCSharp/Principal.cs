@@ -189,6 +189,9 @@ namespace LabCSharp
             miGesED.Visible = true;
         }
 
+        private void powerShellToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

@@ -91,6 +91,7 @@
             this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.powerShellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -287,6 +288,7 @@
             this.msconfigToolStripMenuItem,
             this.regeditToolStripMenuItem,
             this.bATCHToolStripMenuItem,
+            this.powerShellToolStripMenuItem,
             this.variosToolStripMenuItem});
             this.windowsToolStripMenuItem.Name = "windowsToolStripMenuItem";
             this.windowsToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
@@ -324,27 +326,27 @@
             // wordToolStripMenuItem
             // 
             this.wordToolStripMenuItem.Name = "wordToolStripMenuItem";
-            this.wordToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.wordToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.wordToolStripMenuItem.Text = "Word";
             // 
             // outlookToolStripMenuItem
             // 
             this.outlookToolStripMenuItem.Name = "outlookToolStripMenuItem";
-            this.outlookToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.outlookToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.outlookToolStripMenuItem.Text = "Outlook";
             this.outlookToolStripMenuItem.Click += new System.EventHandler(this.outlookToolStripMenuItem_Click);
             // 
             // excelToolStripMenuItem
             // 
             this.excelToolStripMenuItem.Name = "excelToolStripMenuItem";
-            this.excelToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.excelToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.excelToolStripMenuItem.Text = "Excel";
             this.excelToolStripMenuItem.Click += new System.EventHandler(this.excelToolStripMenuItem_Click);
             // 
             // hTMLToolStripMenuItem
             // 
             this.hTMLToolStripMenuItem.Name = "hTMLToolStripMenuItem";
-            this.hTMLToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.hTMLToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.hTMLToolStripMenuItem.Text = "HTML";
             this.hTMLToolStripMenuItem.Click += new System.EventHandler(this.hTMLToolStripMenuItem_Click);
             // 
@@ -400,7 +402,7 @@
             // 
             this.consolaToolStripMenuItem1.Name = "consolaToolStripMenuItem1";
             this.consolaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.consolaToolStripMenuItem1.Text = "Consola";
+            this.consolaToolStripMenuItem1.Text = "CMD";
             // 
             // clipbaoardToolStripMenuItem
             // 
@@ -550,7 +552,7 @@
             // dataToolStripMenuItem
             // 
             this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
-            this.dataToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.dataToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.dataToolStripMenuItem.Text = "Data";
             this.dataToolStripMenuItem.Click += new System.EventHandler(this.dataToolStripMenuItem_Click);
             // 
@@ -570,6 +572,13 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(102, 17);
             this.toolStripStatusLabel1.Text = "Ventanas: 768; 576";
+            // 
+            // powerShellToolStripMenuItem
+            // 
+            this.powerShellToolStripMenuItem.Name = "powerShellToolStripMenuItem";
+            this.powerShellToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.powerShellToolStripMenuItem.Text = "PowerShell";
+            this.powerShellToolStripMenuItem.Click += new System.EventHandler(this.powerShellToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -657,6 +666,7 @@
         private System.Windows.Forms.ToolStripMenuItem estructurasRepetitivasToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripMenuItem powerShellToolStripMenuItem;
     }
 }
 

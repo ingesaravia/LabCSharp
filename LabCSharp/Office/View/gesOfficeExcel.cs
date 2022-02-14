@@ -14,20 +14,14 @@ namespace LabCSharp.Office.View
         private void btnExcel_Click(object sender, EventArgs e)
         {
             claseExcel miExcel = new claseExcel();
-            miExcel.generarListado("D:\\listado.xlsx");
-
+            miExcel.generarListado();
         }
 
-        private void btnCombHojasEjecutar_Click(object sender, EventArgs e)
-        {
-            claseExcel miExcel = new claseExcel();
-            miExcel.generarListado("D:\\listado.xlsx");
-        }
 
         private void btnCombHojaExam_Click(object sender, EventArgs e)
         {
             OpenFileDialog miOpenF = new OpenFileDialog();
-            miOpenF.Filter = "excel files (*.xlsx)|*.xls" + "|All files (*.*)|*.*";
+            miOpenF.Filter = "Excel files (*.xlsx)|*.xls" + "|All files (*.*)|*.*";
             miOpenF.Multiselect = false;
             miOpenF.Title = "Seleccione la carpeta donde se encuentra el archivo";
 
@@ -36,10 +30,13 @@ namespace LabCSharp.Office.View
                 txtCombHojadirArchivo.Text = miOpenF.FileName;
                 claseExcel miExcel = new claseExcel();
                 miExcel.dirArchivo = txtCombHojadirArchivo.Text;
-
-                
-
             }
+        }
+
+        private void btnCombHojasEjecutar_Click(object sender, EventArgs e)
+        {
+            claseExcel miExcel = new claseExcel();
+            miExcel.combinarHojas();
         }
     }
 }

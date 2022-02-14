@@ -30,9 +30,9 @@ namespace LabCSharp.Windows.View
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -95,10 +95,10 @@ namespace LabCSharp.Windows.View
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.btnCCsharpTreeViewDelete = new System.Windows.Forms.Button();
+            this.btnCCsharpTreeViewView = new System.Windows.Forms.Button();
+            this.btnCCsharpTreeViewAdd = new System.Windows.Forms.Button();
+            this.treeviewCCsharp = new System.Windows.Forms.TreeView();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.button19 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
@@ -401,7 +401,7 @@ namespace LabCSharp.Windows.View
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(456, 325);
+            this.tabPage1.Size = new System.Drawing.Size(731, 498);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Basicos";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -635,7 +635,7 @@ namespace LabCSharp.Windows.View
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(456, 325);
+            this.tabPage2.Size = new System.Drawing.Size(731, 498);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Avanzados";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -655,7 +655,7 @@ namespace LabCSharp.Windows.View
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(448, 316);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(723, 489);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // groupBox5
@@ -673,7 +673,7 @@ namespace LabCSharp.Windows.View
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Size = new System.Drawing.Size(219, 153);
+            this.groupBox5.Size = new System.Drawing.Size(357, 240);
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "progressBar";
@@ -767,11 +767,11 @@ namespace LabCSharp.Windows.View
             this.groupBox6.Controls.Add(this.label6);
             this.groupBox6.Controls.Add(this.maskedTextBox1);
             this.groupBox6.Controls.Add(this.textBox1);
-            this.groupBox6.Location = new System.Drawing.Point(226, 2);
+            this.groupBox6.Location = new System.Drawing.Point(363, 2);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox6.Size = new System.Drawing.Size(220, 153);
+            this.groupBox6.Size = new System.Drawing.Size(358, 240);
             this.groupBox6.TabIndex = 1;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "maskedTextBox";
@@ -825,56 +825,57 @@ namespace LabCSharp.Windows.View
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.button14);
-            this.groupBox7.Controls.Add(this.button13);
-            this.groupBox7.Controls.Add(this.button12);
-            this.groupBox7.Controls.Add(this.treeView1);
-            this.groupBox7.Location = new System.Drawing.Point(2, 160);
+            this.groupBox7.Controls.Add(this.btnCCsharpTreeViewDelete);
+            this.groupBox7.Controls.Add(this.btnCCsharpTreeViewView);
+            this.groupBox7.Controls.Add(this.btnCCsharpTreeViewAdd);
+            this.groupBox7.Controls.Add(this.treeviewCCsharp);
+            this.groupBox7.Location = new System.Drawing.Point(2, 246);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox7.Size = new System.Drawing.Size(219, 154);
+            this.groupBox7.Size = new System.Drawing.Size(357, 241);
             this.groupBox7.TabIndex = 2;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "treeView";
             // 
-            // button14
+            // btnCCsharpTreeViewDelete
             // 
-            this.button14.Location = new System.Drawing.Point(126, 130);
-            this.button14.Margin = new System.Windows.Forms.Padding(2);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(56, 19);
-            this.button14.TabIndex = 3;
-            this.button14.Text = "Eliminar";
-            this.button14.UseVisualStyleBackColor = true;
+            this.btnCCsharpTreeViewDelete.Location = new System.Drawing.Point(129, 218);
+            this.btnCCsharpTreeViewDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCCsharpTreeViewDelete.Name = "btnCCsharpTreeViewDelete";
+            this.btnCCsharpTreeViewDelete.Size = new System.Drawing.Size(56, 19);
+            this.btnCCsharpTreeViewDelete.TabIndex = 3;
+            this.btnCCsharpTreeViewDelete.Text = "Eliminar";
+            this.btnCCsharpTreeViewDelete.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // btnCCsharpTreeViewView
             // 
-            this.button13.Location = new System.Drawing.Point(65, 130);
-            this.button13.Margin = new System.Windows.Forms.Padding(2);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(56, 19);
-            this.button13.TabIndex = 2;
-            this.button13.Text = "Consultar";
-            this.button13.UseVisualStyleBackColor = true;
+            this.btnCCsharpTreeViewView.Location = new System.Drawing.Point(68, 218);
+            this.btnCCsharpTreeViewView.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCCsharpTreeViewView.Name = "btnCCsharpTreeViewView";
+            this.btnCCsharpTreeViewView.Size = new System.Drawing.Size(56, 19);
+            this.btnCCsharpTreeViewView.TabIndex = 2;
+            this.btnCCsharpTreeViewView.Text = "Consultar";
+            this.btnCCsharpTreeViewView.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // btnCCsharpTreeViewAdd
             // 
-            this.button12.Location = new System.Drawing.Point(4, 130);
-            this.button12.Margin = new System.Windows.Forms.Padding(2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(56, 19);
-            this.button12.TabIndex = 1;
-            this.button12.Text = "Agregar";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnCCsharpTreeViewAdd.Location = new System.Drawing.Point(7, 218);
+            this.btnCCsharpTreeViewAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCCsharpTreeViewAdd.Name = "btnCCsharpTreeViewAdd";
+            this.btnCCsharpTreeViewAdd.Size = new System.Drawing.Size(56, 19);
+            this.btnCCsharpTreeViewAdd.TabIndex = 1;
+            this.btnCCsharpTreeViewAdd.Text = "Agregar";
+            this.btnCCsharpTreeViewAdd.UseVisualStyleBackColor = true;
+            this.btnCCsharpTreeViewAdd.Click += new System.EventHandler(this.btnCCsharpTreeViewAdd_Click);
             // 
-            // treeView1
+            // treeviewCCsharp
             // 
-            this.treeView1.Location = new System.Drawing.Point(7, 17);
-            this.treeView1.Margin = new System.Windows.Forms.Padding(2);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(209, 109);
-            this.treeView1.TabIndex = 0;
+            this.treeviewCCsharp.Location = new System.Drawing.Point(7, 17);
+            this.treeviewCCsharp.Margin = new System.Windows.Forms.Padding(2);
+            this.treeviewCCsharp.Name = "treeviewCCsharp";
+            this.treeviewCCsharp.Size = new System.Drawing.Size(346, 197);
+            this.treeviewCCsharp.TabIndex = 0;
             // 
             // groupBox8
             // 
@@ -884,18 +885,18 @@ namespace LabCSharp.Windows.View
             this.groupBox8.Controls.Add(this.richTextBox2);
             this.groupBox8.Controls.Add(this.label15);
             this.groupBox8.Controls.Add(this.comboBox2);
-            this.groupBox8.Location = new System.Drawing.Point(226, 160);
+            this.groupBox8.Location = new System.Drawing.Point(363, 246);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox8.Size = new System.Drawing.Size(220, 154);
+            this.groupBox8.Size = new System.Drawing.Size(358, 241);
             this.groupBox8.TabIndex = 3;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "comboBox";
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(126, 130);
+            this.button19.Location = new System.Drawing.Point(126, 218);
             this.button19.Margin = new System.Windows.Forms.Padding(2);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(56, 19);
@@ -906,7 +907,7 @@ namespace LabCSharp.Windows.View
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(65, 130);
+            this.button18.Location = new System.Drawing.Point(65, 218);
             this.button18.Margin = new System.Windows.Forms.Padding(2);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(56, 19);
@@ -917,7 +918,7 @@ namespace LabCSharp.Windows.View
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(4, 130);
+            this.button16.Location = new System.Drawing.Point(4, 218);
             this.button16.Margin = new System.Windows.Forms.Padding(2);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(56, 19);
@@ -931,7 +932,7 @@ namespace LabCSharp.Windows.View
             this.richTextBox2.Location = new System.Drawing.Point(4, 41);
             this.richTextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(212, 84);
+            this.richTextBox2.Size = new System.Drawing.Size(350, 173);
             this.richTextBox2.TabIndex = 2;
             this.richTextBox2.Text = "";
             // 
@@ -957,7 +958,7 @@ namespace LabCSharp.Windows.View
             this.comboBox2.Location = new System.Drawing.Point(58, 17);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(158, 21);
+            this.comboBox2.Size = new System.Drawing.Size(296, 21);
             this.comboBox2.TabIndex = 0;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -967,7 +968,7 @@ namespace LabCSharp.Windows.View
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(456, 325);
+            this.tabPage3.Size = new System.Drawing.Size(731, 498);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "WebBrowser";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1078,7 +1079,7 @@ namespace LabCSharp.Windows.View
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(456, 325);
+            this.tabPage4.Size = new System.Drawing.Size(731, 498);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Chart";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1172,18 +1173,18 @@ namespace LabCSharp.Windows.View
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(4, 58);
             this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.IsVisibleInLegend = false;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(440, 255);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -1194,7 +1195,7 @@ namespace LabCSharp.Windows.View
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(456, 325);
+            this.tabPage5.Size = new System.Drawing.Size(731, 498);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Date";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1317,7 +1318,7 @@ namespace LabCSharp.Windows.View
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(456, 325);
+            this.tabPage7.Size = new System.Drawing.Size(731, 498);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "SplitContainer";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -1328,8 +1329,8 @@ namespace LabCSharp.Windows.View
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Size = new System.Drawing.Size(456, 325);
-            this.splitContainer1.SplitterDistance = 151;
+            this.splitContainer1.Size = new System.Drawing.Size(731, 498);
+            this.splitContainer1.SplitterDistance = 242;
             this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -1429,10 +1430,10 @@ namespace LabCSharp.Windows.View
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.Button btnCCsharpTreeViewDelete;
+        private System.Windows.Forms.Button btnCCsharpTreeViewView;
+        private System.Windows.Forms.Button btnCCsharpTreeViewAdd;
+        private System.Windows.Forms.TreeView treeviewCCsharp;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox9;

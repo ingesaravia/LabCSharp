@@ -30,15 +30,16 @@ namespace LabCSharp.Office
         {
             //declaracion de variables de Excel
             Application miExcel = new Application();
-            Workbook miWorkbook = miExcel.Workbooks.Open(dirArchivo);
+            Workbook miWorkbook = miExcel.Workbooks.Open("C:\\Back\\ead.xlsx");
 
             //contar cantidad de hojas
             Worksheet miWorksheetDestino = miWorkbook.Sheets[1];
             int cantWS = miWorkbook.Sheets.Count;
+            Console.WriteLine("ES " + cantWS);
 
-            for (int i=2; i<= cantWS; i++)
+            for (int i = 2; i <= cantWS; i++)
             {
-                miWorksheetDestino.Copy(miExcel.ActiveWorkbook.Worksheets[i]);
+                miWorksheetDestino.Copy(miWorkbook.Sheets[i]);
             }
 
             miWorkbook.Save();
@@ -46,7 +47,7 @@ namespace LabCSharp.Office
             miExcel.Quit();
         }
 
-        public void generarListado(string dirArchivo)
+        public void generarListado()
         {
             //declaracion de arreglos
             string[,] tracking;

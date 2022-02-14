@@ -97,5 +97,17 @@ namespace LabCSharp.Windows.View
                 MessageBox.Show("Selecciona la opcion en el ComboBox");
             
         }
+
+        private void btnCCsharpTreeViewAdd_Click(object sender, EventArgs e)
+        {
+            TreeNode nivel1 = new TreeNode();
+            nivel1.Name = "AG00000";
+            nivel1.Text = "GASTOS GENERALES";
+
+            treeviewCCsharp.Nodes.Add(nivel1);
+
+
+
+        }
     }
 }
