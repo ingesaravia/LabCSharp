@@ -1,6 +1,7 @@
 ﻿using LabCSharp.Office.View;
 using LabCSharp.View;
 using LabCSharp.Windows.View;
+using Microsoft.Win32;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -192,6 +193,38 @@ namespace LabCSharp
         private void powerShellToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void regeditToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //agregar registros
+            Microsoft.Win32.Registry.SetValue(
+            @"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run",
+            "MyApp",
+            Application.ExecutablePath);
+
+
+            //borrar registros de Regedit
+            string keyName = @"Software\Microsoft\Windows\CurrentVersion\Run";
+            using (RegistryKey key = Registry.CurrentUser.OpenSubKey(keyName, true))
+            {
+                if (key == null)
+                {
+                    // Key doesn't exist. Do whatever you want to handle
+                    // this case
+                }
+                else
+                {
+                    key.DeleteValue("MyApp");
+                }
+            }
+
+            //otra posibilidad
+            RegistryKey registrykeyHKLM = Registry.LocalMachine;
+            string keyPath = @"Software\Microsoft\Windows\CurrentVersion\Run\MyApp";
+
+            registrykeyHKLM.DeleteValue(keyPath);
+            registrykeyHKLM.Close();
         }
     }
 }
