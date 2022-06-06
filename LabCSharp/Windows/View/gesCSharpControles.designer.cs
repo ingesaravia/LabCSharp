@@ -30,9 +30,9 @@ namespace LabCSharp.Windows.View
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -227,7 +227,7 @@ namespace LabCSharp.Windows.View
             this.groupBox13.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox13.Size = new System.Drawing.Size(448, 318);
+            this.groupBox13.Size = new System.Drawing.Size(725, 494);
             this.groupBox13.TabIndex = 0;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "groupBox13";
@@ -288,7 +288,7 @@ namespace LabCSharp.Windows.View
             // 
             // button22
             // 
-            this.button22.Location = new System.Drawing.Point(388, 296);
+            this.button22.Location = new System.Drawing.Point(406, 470);
             this.button22.Margin = new System.Windows.Forms.Padding(2);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(56, 19);
@@ -298,7 +298,7 @@ namespace LabCSharp.Windows.View
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(50, 296);
+            this.textBox3.Location = new System.Drawing.Point(68, 470);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(335, 20);
@@ -307,7 +307,7 @@ namespace LabCSharp.Windows.View
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(22, 298);
+            this.label11.Location = new System.Drawing.Point(40, 472);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(26, 13);
@@ -371,7 +371,7 @@ namespace LabCSharp.Windows.View
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(440, 204);
+            this.dataGridView1.Size = new System.Drawing.Size(717, 379);
             this.dataGridView1.TabIndex = 0;
             // 
             // ID
@@ -421,7 +421,7 @@ namespace LabCSharp.Windows.View
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(448, 318);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(723, 489);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // groupBox1
@@ -434,7 +434,7 @@ namespace LabCSharp.Windows.View
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(219, 154);
+            this.groupBox1.Size = new System.Drawing.Size(357, 240);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "checkedListBox";
@@ -475,7 +475,7 @@ namespace LabCSharp.Windows.View
             this.checkedListBox1.Location = new System.Drawing.Point(4, 21);
             this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(211, 64);
+            this.checkedListBox1.Size = new System.Drawing.Size(349, 64);
             this.checkedListBox1.TabIndex = 0;
             // 
             // groupBox2
@@ -483,11 +483,11 @@ namespace LabCSharp.Windows.View
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Location = new System.Drawing.Point(226, 2);
+            this.groupBox2.Location = new System.Drawing.Point(363, 2);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(220, 154);
+            this.groupBox2.Size = new System.Drawing.Size(358, 240);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "dateTimePicker";
@@ -517,7 +517,7 @@ namespace LabCSharp.Windows.View
             this.dateTimePicker1.Location = new System.Drawing.Point(65, 17);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(151, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(289, 20);
             this.dateTimePicker1.TabIndex = 0;
             // 
             // groupBox3
@@ -526,11 +526,11 @@ namespace LabCSharp.Windows.View
             this.groupBox3.Controls.Add(this.button6);
             this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Controls.Add(this.listBox1);
-            this.groupBox3.Location = new System.Drawing.Point(2, 161);
+            this.groupBox3.Location = new System.Drawing.Point(2, 246);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(219, 154);
+            this.groupBox3.Size = new System.Drawing.Size(357, 241);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "listBox";
@@ -571,7 +571,7 @@ namespace LabCSharp.Windows.View
             this.listBox1.Location = new System.Drawing.Point(4, 17);
             this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(211, 108);
+            this.listBox1.Size = new System.Drawing.Size(349, 108);
             this.listBox1.TabIndex = 0;
             // 
             // groupBox4
@@ -580,11 +580,11 @@ namespace LabCSharp.Windows.View
             this.groupBox4.Controls.Add(this.button9);
             this.groupBox4.Controls.Add(this.button8);
             this.groupBox4.Controls.Add(this.listView1);
-            this.groupBox4.Location = new System.Drawing.Point(226, 161);
+            this.groupBox4.Location = new System.Drawing.Point(363, 246);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(220, 154);
+            this.groupBox4.Size = new System.Drawing.Size(358, 241);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "listView";
@@ -624,7 +624,7 @@ namespace LabCSharp.Windows.View
             this.listView1.Location = new System.Drawing.Point(4, 17);
             this.listView1.Margin = new System.Windows.Forms.Padding(2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(212, 108);
+            this.listView1.Size = new System.Drawing.Size(350, 108);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -1173,18 +1173,18 @@ namespace LabCSharp.Windows.View
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(4, 58);
             this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(440, 255);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
