@@ -1,4 +1,4 @@
-﻿namespace LabCSharp.View
+﻿namespace LabCSharp.Multimedia.View
 {
     partial class gesImagenes
     {
@@ -77,6 +77,7 @@
             this.btnArcoIris = new System.Windows.Forms.Button();
             this.btnRandom = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnLinealPixel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -375,7 +376,7 @@
             // 
             this.groupBox5.Controls.Add(this.button1);
             this.groupBox5.Controls.Add(this.textBox3);
-            this.groupBox5.Location = new System.Drawing.Point(2, 266);
+            this.groupBox5.Location = new System.Drawing.Point(4, 414);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
@@ -386,7 +387,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(70, 37);
+            this.button1.Location = new System.Drawing.Point(163, 38);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(68, 19);
@@ -399,7 +400,7 @@
             this.textBox3.Location = new System.Drawing.Point(4, 17);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(134, 20);
+            this.textBox3.Size = new System.Drawing.Size(229, 20);
             this.textBox3.TabIndex = 0;
             // 
             // tabControl3
@@ -411,7 +412,7 @@
             this.tabControl3.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(237, 258);
+            this.tabControl3.Size = new System.Drawing.Size(237, 408);
             this.tabControl3.TabIndex = 0;
             // 
             // tabPage5
@@ -423,7 +424,7 @@
             this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage5.Size = new System.Drawing.Size(229, 232);
+            this.tabPage5.Size = new System.Drawing.Size(229, 382);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Colores";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -452,7 +453,7 @@
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox6.Size = new System.Drawing.Size(130, 119);
+            this.groupBox6.Size = new System.Drawing.Size(221, 119);
             this.groupBox6.TabIndex = 1;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Valores";
@@ -539,7 +540,7 @@
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox7.Size = new System.Drawing.Size(130, 77);
+            this.groupBox7.Size = new System.Drawing.Size(221, 77);
             this.groupBox7.TabIndex = 0;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Codificacion";
@@ -586,7 +587,7 @@
             this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage6.Size = new System.Drawing.Size(138, 232);
+            this.tabPage6.Size = new System.Drawing.Size(229, 382);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Tools";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -597,43 +598,46 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(138, 232);
+            this.tabPage7.Size = new System.Drawing.Size(229, 382);
             this.tabPage7.TabIndex = 2;
             this.tabPage7.Text = "Pruebas";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.btnLinealPixel);
             this.groupBox8.Controls.Add(this.btnArcoIris);
             this.groupBox8.Controls.Add(this.btnRandom);
             this.groupBox8.Location = new System.Drawing.Point(2, 2);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox8.Size = new System.Drawing.Size(133, 230);
+            this.groupBox8.Size = new System.Drawing.Size(225, 378);
             this.groupBox8.TabIndex = 0;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "groupBox8";
             // 
             // btnArcoIris
             // 
-            this.btnArcoIris.Location = new System.Drawing.Point(4, 41);
+            this.btnArcoIris.Location = new System.Drawing.Point(8, 40);
             this.btnArcoIris.Margin = new System.Windows.Forms.Padding(2);
             this.btnArcoIris.Name = "btnArcoIris";
             this.btnArcoIris.Size = new System.Drawing.Size(124, 19);
             this.btnArcoIris.TabIndex = 1;
             this.btnArcoIris.Text = "ARCO IRIS";
             this.btnArcoIris.UseVisualStyleBackColor = true;
+            this.btnArcoIris.Click += new System.EventHandler(this.BtnArcoIris_Click);
             // 
             // btnRandom
             // 
-            this.btnRandom.Location = new System.Drawing.Point(4, 17);
+            this.btnRandom.Location = new System.Drawing.Point(8, 17);
             this.btnRandom.Margin = new System.Windows.Forms.Padding(2);
             this.btnRandom.Name = "btnRandom";
             this.btnRandom.Size = new System.Drawing.Size(124, 19);
             this.btnRandom.TabIndex = 0;
             this.btnRandom.Text = "RANDOM";
             this.btnRandom.UseVisualStyleBackColor = true;
+            this.btnRandom.Click += new System.EventHandler(this.BtnRandom_Click);
             // 
             // pictureBox2
             // 
@@ -643,6 +647,16 @@
             this.pictureBox2.Size = new System.Drawing.Size(475, 477);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            // 
+            // btnLinealPixel
+            // 
+            this.btnLinealPixel.Location = new System.Drawing.Point(8, 64);
+            this.btnLinealPixel.Name = "btnLinealPixel";
+            this.btnLinealPixel.Size = new System.Drawing.Size(124, 23);
+            this.btnLinealPixel.TabIndex = 2;
+            this.btnLinealPixel.Text = "LINEAL";
+            this.btnLinealPixel.UseVisualStyleBackColor = true;
+            this.btnLinealPixel.Click += new System.EventHandler(this.BtnLinealPixel_Click);
             // 
             // gesImagenes
             // 
@@ -742,5 +756,6 @@
         private System.Windows.Forms.Button btnRandom;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnLinealPixel;
     }
 }

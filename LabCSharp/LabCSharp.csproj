@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -40,6 +55,10 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -58,18 +77,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Office\Class\claseExcel.cs" />
+    <Compile Include="Help\gesData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help\gesData.Designer.cs">
+      <DependentUpon>gesData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSoft\View\gesSharepoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSoft\View\gesSharepoint.Designer.cs">
+      <DependentUpon>gesSharepoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multimedia\Class\claseImagen.cs" />
+    <Compile Include="Networking\Class\claseEmail.cs" />
+    <Compile Include="Networking\View\gesEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Networking\View\gesEmail.Designer.cs">
+      <DependentUpon>gesEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ofimatica\Class\claseExcel.cs" />
     <Compile Include="Multimedia\View\gesImagenes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Multimedia\View\gesImagenes.designer.cs">
       <DependentUpon>gesImagenes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Multimedia\View\gesPixeles.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Multimedia\View\gesPixeles.designer.cs">
-      <DependentUpon>gesPixeles.cs</DependentUpon>
     </Compile>
     <Compile Include="Networking\View\gesConectividad.cs">
       <SubType>Form</SubType>
@@ -83,22 +116,28 @@
     <Compile Include="Networking\View\gesNavegador.Designer.cs">
       <DependentUpon>gesNavegador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Office\View\gesHTML.cs">
+    <Compile Include="Ofimatica\View\gesFirma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Office\View\gesHTML.Designer.cs">
+    <Compile Include="Ofimatica\View\gesFirma.Designer.cs">
+      <DependentUpon>gesFirma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ofimatica\View\gesHTML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ofimatica\View\gesHTML.Designer.cs">
       <DependentUpon>gesHTML.cs</DependentUpon>
     </Compile>
-    <Compile Include="Office\View\gesOfficeExcel.cs">
+    <Compile Include="Ofimatica\View\gesOfficeExcel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Office\View\gesOfficeExcel.designer.cs">
+    <Compile Include="Ofimatica\View\gesOfficeExcel.designer.cs">
       <DependentUpon>gesOfficeExcel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Office\View\gesOfficeWord.cs">
+    <Compile Include="Ofimatica\View\gesOfficeWord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Office\View\gesOfficeWord.Designer.cs">
+    <Compile Include="Ofimatica\View\gesOfficeWord.Designer.cs">
       <DependentUpon>gesOfficeWord.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
@@ -135,71 +174,77 @@
     <Compile Include="Seguridad\View\gesEmail.Designer.cs">
       <DependentUpon>gesEmail.cs</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Class\claseArchivo.cs" />
-    <Compile Include="Windows\Class\claseServicio.cs">
+    <Compile Include="MSoft\Class\claseArchivo.cs" />
+    <Compile Include="MSoft\Class\claseServicio.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Windows\View\gesArchivo.cs">
+    <Compile Include="MSoft\View\gesArchivo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Windows\View\gesArchivo.designer.cs">
+    <Compile Include="MSoft\View\gesArchivo.designer.cs">
       <DependentUpon>gesArchivo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Windows\View\gesBDArchivo.cs">
+    <Compile Include="MSoft\View\gesBDArchivo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Windows\View\gesBDArchivo.Designer.cs">
+    <Compile Include="MSoft\View\gesBDArchivo.Designer.cs">
       <DependentUpon>gesBDArchivo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Windows\View\gesClipboard.cs">
+    <Compile Include="MSoft\View\gesClipboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Windows\View\gesClipboard.designer.cs">
+    <Compile Include="MSoft\View\gesClipboard.designer.cs">
       <DependentUpon>gesClipboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Windows\View\gesCSharpComponents.cs">
+    <Compile Include="MSoft\View\gesCSharpComponents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Windows\View\gesCSharpComponents.Designer.cs">
+    <Compile Include="MSoft\View\gesCSharpComponents.Designer.cs">
       <DependentUpon>gesCSharpComponents.cs</DependentUpon>
     </Compile>
-    <Compile Include="Windows\View\gesCSharpControles.cs">
+    <Compile Include="MSoft\View\gesCSharpControles.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Windows\View\gesCSharpControles.designer.cs">
+    <Compile Include="MSoft\View\gesCSharpControles.designer.cs">
       <DependentUpon>gesCSharpControles.cs</DependentUpon>
     </Compile>
-    <Compile Include="Windows\View\gesCSharpEventos.cs">
+    <Compile Include="MSoft\View\gesCSharpEventos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Windows\View\gesCSharpEventos.designer.cs">
+    <Compile Include="MSoft\View\gesCSharpEventos.designer.cs">
       <DependentUpon>gesCSharpEventos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Windows\View\gesServicios.cs">
+    <Compile Include="MSoft\View\gesServicios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Windows\View\gesServicios.Designer.cs">
+    <Compile Include="MSoft\View\gesServicios.Designer.cs">
       <DependentUpon>gesServicios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MSoft\View\gesSharepoint.resx">
+      <DependentUpon>gesSharepoint.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Multimedia\View\gesImagenes.resx">
       <DependentUpon>gesImagenes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Multimedia\View\gesPixeles.resx">
-      <DependentUpon>gesPixeles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Networking\View\gesConectividad.resx">
       <DependentUpon>gesConectividad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Networking\View\gesEmail.resx">
+      <DependentUpon>gesEmail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Networking\View\gesNavegador.resx">
       <DependentUpon>gesNavegador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Office\View\gesHTML.resx">
+    <EmbeddedResource Include="Ofimatica\View\gesFirma.resx">
+      <DependentUpon>gesFirma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ofimatica\View\gesHTML.resx">
       <DependentUpon>gesHTML.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Office\View\gesOfficeExcel.resx">
+    <EmbeddedResource Include="Ofimatica\View\gesOfficeExcel.resx">
       <DependentUpon>gesOfficeExcel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Office\View\gesOfficeWord.resx">
+    <EmbeddedResource Include="Ofimatica\View\gesOfficeWord.resx">
       <DependentUpon>gesOfficeWord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
@@ -223,27 +268,28 @@
     <EmbeddedResource Include="Seguridad\View\gesEmail.resx">
       <DependentUpon>gesEmail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Windows\View\gesArchivo.resx">
+    <EmbeddedResource Include="MSoft\View\gesArchivo.resx">
       <DependentUpon>gesArchivo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Windows\View\gesBDArchivo.resx">
+    <EmbeddedResource Include="MSoft\View\gesBDArchivo.resx">
       <DependentUpon>gesBDArchivo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Windows\View\gesClipboard.resx">
+    <EmbeddedResource Include="MSoft\View\gesClipboard.resx">
       <DependentUpon>gesClipboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Windows\View\gesCSharpComponents.resx">
+    <EmbeddedResource Include="MSoft\View\gesCSharpComponents.resx">
       <DependentUpon>gesCSharpComponents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Windows\View\gesCSharpControles.resx">
+    <EmbeddedResource Include="MSoft\View\gesCSharpControles.resx">
       <DependentUpon>gesCSharpControles.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Windows\View\gesCSharpEventos.resx">
+    <EmbeddedResource Include="MSoft\View\gesCSharpEventos.resx">
       <DependentUpon>gesCSharpEventos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Windows\View\gesServicios.resx">
+    <EmbeddedResource Include="MSoft\View\gesServicios.resx">
       <DependentUpon>gesServicios.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -258,24 +304,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Multimedia\Class\" />
-    <Folder Include="Networking\Class\" />
     <Folder Include="Seguridad\Class\" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
       <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
       <VersionMajor>2</VersionMajor>
-      <VersionMinor>5</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-    <COMReference Include="Microsoft.Office.Interop.Excel">
-      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>9</VersionMinor>
+      <VersionMinor>8</VersionMinor>
       <Lcid>0</Lcid>
       <WrapperTool>primary</WrapperTool>
       <Isolated>False</Isolated>
@@ -303,12 +338,21 @@
   <ItemGroup>
     <Content Include="Code.ico" />
     <Content Include="Help\Data.html" />
-    <Content Include="Img\Code.ico" />
-    <Content Include="Img\fondo1.jpg" />
-    <Content Include="Img\fondo2.jpg" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

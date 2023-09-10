@@ -1,4 +1,4 @@
-﻿namespace LabCSharp.View
+﻿namespace LabCSharp.Networking.View
 {
     partial class gesNavegador
     {
@@ -69,7 +69,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(568, 431);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1209, 534);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // groupBox1
@@ -85,7 +85,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(564, 59);
+            this.groupBox1.Size = new System.Drawing.Size(1205, 76);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Navegador";
@@ -203,7 +203,19 @@
             "http://mugenplayer.blogspot.com/",
             "http://openjuy.com/#/",
             "https://rarbg.to/torrents.php?search=nutaku",
-            "https://www.linguee.es/"});
+            "https://www.linguee.es/",
+            "https://www.base64-image.de",
+            "https://www.webdoxclm.com/blog/que-es-un-clm-o-contract-lifecycle-management-soft" +
+                "ware",
+            "https://www.ticportal.es/glosario-tic/ciclo-vida-documento",
+            "https://ciudadaniadigital.mineduc.cl",
+            "https://support.cloudhq.net/how-to-sync-office365-sharepoint-site-and-dropbox/",
+            "https://www.compartimoss.com",
+            "https://setapp.com/how-to/how-to-open-msg-files-on-mac",
+            "https://social.msdn.microsoft.com/Forums/en-US/5c3acfa3-5033-444a-8b50-cb9abaf53e" +
+                "3d/how-can-i-save-a-pdf-file-to-ms-sql-serve-2008?forum=wpf",
+            "https://this-person-does-not-exist.com/en",
+            "https://www.anypicker.com"});
             this.comboBox1.Location = new System.Drawing.Point(76, 35);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
@@ -255,21 +267,21 @@
             // webBrowser1
             // 
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(2, 66);
+            this.webBrowser1.Location = new System.Drawing.Point(2, 82);
             this.webBrowser1.Margin = new System.Windows.Forms.Padding(2);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(15, 16);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(564, 297);
+            this.webBrowser1.Size = new System.Drawing.Size(1205, 369);
             this.webBrowser1.TabIndex = 1;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.tableLayoutPanel2);
-            this.groupBox2.Location = new System.Drawing.Point(2, 367);
+            this.groupBox2.Location = new System.Drawing.Point(2, 455);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(560, 61);
+            this.groupBox2.Size = new System.Drawing.Size(1205, 77);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Estado";
@@ -381,7 +393,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 451);
+            this.ClientSize = new System.Drawing.Size(1229, 555);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "gesNavegador";

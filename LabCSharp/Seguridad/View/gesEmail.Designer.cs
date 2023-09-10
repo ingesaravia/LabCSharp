@@ -97,6 +97,7 @@
             this.btnDMARCXMLEjecutar.TabIndex = 0;
             this.btnDMARCXMLEjecutar.Text = "EJECUTAR";
             this.btnDMARCXMLEjecutar.UseVisualStyleBackColor = true;
+            this.btnDMARCXMLEjecutar.Click += new System.EventHandler(this.BtnDMARCXMLEjecutar_Click);
             // 
             // tabPage2
             // 

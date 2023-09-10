@@ -1,9 +1,12 @@
-﻿using LabCSharp.Office.View;
-using LabCSharp.View;
-using LabCSharp.Windows.View;
+﻿using LabCSharp.Multimedia.Class;
+using LabCSharp.Ofimatica.View;
+using LabCSharp.Programacion.View;
+
+using LabCSharp.Networking.View;
+using LabCSharp.MSoft.View;
+using LabCSharp.Multimedia.View;
 using Microsoft.Win32;
 using System;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace LabCSharp
@@ -14,19 +17,35 @@ namespace LabCSharp
         {
             InitializeComponent();
             cambiarFondo();
-
         }
 
         private void cambiarFondo()
         {
+
+            int width = this.Width;
+            int height = this.Height;
+            int alfa = 0;
+            int red = 0;
+            int green = 0;
+            int blue = 0;
+            claseImagen miImg = new claseImagen(width, height, alfa, red, green, blue);
+
             Random rand = new Random();
-            int num = rand.Next(1, 2);
+            int num = rand.Next(1, 4);
+            if (num == 1)
+                miImg.miBitmap = miImg.randomPixel(miImg);
+            if (num == 2)
+                miImg.miBitmap = miImg.arcoIris(miImg);
+            if (num == 3)
+                miImg.miBitmap = miImg.linealPixel(miImg);
 
-            string fullpath = "..\\..\\Img\\fondo" + num.ToString() + ".jpg";
-            Image miImg = Bitmap.FromFile(fullpath);
-            this.BackgroundImage = miImg;
+            this.BackgroundImage = miImg.miBitmap;
+
+            gesNavegador miNav= new gesNavegador();
+            miNav.MdiParent = this;
+            miNav.Visible = true;
+            
         }
-
 
         private void enumeradoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -54,13 +73,6 @@ namespace LabCSharp
     */
         }
 
-        private void archivosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            gesArchivo miGA = new gesArchivo();
-            miGA.MdiParent = this;
-            miGA.Visible = true;
-        }
-
         private void bATCHToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
@@ -78,6 +90,7 @@ namespace LabCSharp
         private void excelToolStripMenuItem_Click(object sender, EventArgs e)
         {
             gesOfficeExcel miOfficeExcel = new gesOfficeExcel();
+            miOfficeExcel.MdiParent = this;
             miOfficeExcel.Visible = true;
         }
 
@@ -107,13 +120,6 @@ namespace LabCSharp
             gesImagenes miGI = new gesImagenes();
             miGI.MdiParent = this;
             miGI.Visible = true;
-        }
-
-        private void pixelesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            gesPixeles miGPx = new gesPixeles();
-            miGPx.MdiParent = this;
-            miGPx.Visible = true;
         }
 
         private void conectividadToolStripMenuItem_Click(object sender, EventArgs e)
@@ -161,10 +167,6 @@ namespace LabCSharp
 
         }
 
-        private void dMARCAnalyserToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void outlookToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -190,12 +192,59 @@ namespace LabCSharp
             miGesED.Visible = true;
         }
 
-        private void powerShellToolStripMenuItem_Click(object sender, EventArgs e)
+        private void FirmasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gesFirma miGesFirma = new gesFirma();
+            miGesFirma.MdiParent = this;
+            miGesFirma.Visible = true;
+            miGesFirma.Dock = DockStyle.Fill;
+            miGesFirma.WindowState = FormWindowState.Maximized;
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void regeditToolStripMenuItem_Click(object sender, EventArgs e)
+        private void MenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void copiarAplicacion()
+        {
+            string Archivo = "LabCSharp.exe";
+            string dirArchivoOrigen = "..\\..\\bin\\Debug";
+            string dirArchivoDestino = "C:\\Users\\ILS\\Desktop";
+
+            // Use Path class to manipulate file and directory paths.
+            string ArchivoOrigen = System.IO.Path.Combine(dirArchivoOrigen, Archivo);
+            string ArchivoDestino = System.IO.Path.Combine(dirArchivoDestino, Archivo);
+
+            // To copy a folder's contents to a new location:
+            // Create a new target folder, if necessary.
+            if (!System.IO.Directory.Exists(dirArchivoDestino))
+            {
+                System.IO.Directory.CreateDirectory(dirArchivoDestino);
+            }
+
+            // To copy a file to another location and 
+            // overwrite the destination file if it already exists.
+            System.IO.File.Copy(ArchivoOrigen, ArchivoDestino, true);
+        }
+        private void AplicacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            copiarAplicacion();
+        }
+
+        private void ArchivosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            gesArchivo miGA = new gesArchivo();
+            miGA.MdiParent = this;
+            miGA.Visible = true;
+        }
+
+        private void RegedtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //agregar registros
             Microsoft.Win32.Registry.SetValue(
@@ -225,6 +274,20 @@ namespace LabCSharp
 
             registrykeyHKLM.DeleteValue(keyPath);
             registrykeyHKLM.Close();
+        }
+
+        private void SharePointToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gesSharepoint miGesSharepoint = new gesSharepoint();
+            miGesSharepoint.MdiParent = this;
+            miGesSharepoint.Visible = true;
+        }
+
+        private void EmailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gesEmail miGesEmail = new gesEmail();
+            miGesEmail.MdiParent = this;
+            miGesEmail.Visible = true;
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace LabCSharp.View
+﻿namespace LabCSharp.Programacion.View
 {
     partial class gesEstructuraDatos
     {

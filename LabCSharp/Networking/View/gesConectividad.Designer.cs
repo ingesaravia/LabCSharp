@@ -1,4 +1,4 @@
-﻿namespace LabCSharp.View
+﻿namespace LabCSharp.Networking.View
 {
     partial class gesConectividad
     {

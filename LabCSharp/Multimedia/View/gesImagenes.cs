@@ -1,16 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using LabCSharp.Multimedia.Class;
 
-namespace LabCSharp.View
+namespace LabCSharp.Multimedia.View
 {
     public partial class gesImagenes : Form
     {
@@ -18,10 +13,23 @@ namespace LabCSharp.View
         private List<string> listaImagenes;
         private int posicionLista;
         private Image miImagen;
+        private claseImagen miImg;
+
 
         public gesImagenes()
         {
             InitializeComponent();
+            int width = this.pictureBox2.Width;
+            int height = this.pictureBox2.Height;
+            int alfa = 0;
+            int red = 0;
+            int green = 0;
+            int blue = 0;
+            miImg = new claseImagen(width, height, alfa, red, green, blue);
+
+            Random miRand = new Random();
+
+            pictureBox1.Image = miImg.miBitmap;
         }
 
         private void btnExaminar_Click(object sender, EventArgs e)
@@ -89,7 +97,6 @@ namespace LabCSharp.View
 
         private void cargarImagen()
         {
-            
             miImagen = Image.FromFile(listaImagenes[posicionLista]);
             pictureBox1.Image = miImagen;
         }
@@ -119,6 +126,21 @@ namespace LabCSharp.View
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnRandom_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Image = miImg.randomPixel(miImg);
+        }
+
+        private void BtnArcoIris_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Image = miImg.arcoIris(miImg);
+        }
+
+        private void BtnLinealPixel_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Image = miImg.linealPixel(miImg);
         }
     }
 }
